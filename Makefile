@@ -1,0 +1,18 @@
+VERSION = 1.0
+INC_DIR = ./
+CC = g++
+CFLAGS = -std=c++17 -Wall -I$(INC_DIR) -Wno-shift-count-overflow
+LDFLAGS = -lm -lpthread 
+
+OBJ = json.o userMgr.o lvlMgr.o main.o SHA1.o gameServer.o webSession.o server.o lvl.o room.o gameSession.o webServer.o webSocketFrame.o
+
+a: $(OBJ)
+	$(CC) $(CFLAGS) -o eddy $(OBJ) $(LDFLAGS)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $<
+
+//$(OBJ) = $(HEADERS)
+
+c:
+	rm *.o eddy

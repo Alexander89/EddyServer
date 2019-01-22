@@ -1,0 +1,17 @@
+id:1
+name:AuswahlTest
+desc:Recht Quadratische Karte die viele Fallen und hindernisse beinhaltet
+vers:0.1
+maxP:4
+auth:Alex Hal
+date:2017-11-20 20:13
+
+[0.1]
+sonne:45
+sonneRichtung:150
+[0.2]
+sonne:45
+sonneRichtung:150
+[1.8]
+sonne:45
+sonneRichtung:150
